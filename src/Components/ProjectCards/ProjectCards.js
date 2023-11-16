@@ -8,7 +8,18 @@ import "./projectcards.css"
 function ProjectCards({ imgPath, title, description, tech, techD, link, a }) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={imgPath} alt="card-img" />
+      <div className="image-container">
+        <Card.Img variant="top" src={imgPath} alt="card-img" />
+        <div className="image-overlay"></div>
+        <div className="redirect-button">
+          <Button variant="primary" href={link} target="_blank">
+            <BiLinkExternal /> &nbsp;
+          </Button>
+          <Button variant="primary" href={a} target="_blank">
+            <AiFillGithub /> &nbsp;
+          </Button>
+        </div>
+      </div>
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
@@ -18,14 +29,14 @@ function ProjectCards({ imgPath, title, description, tech, techD, link, a }) {
         <Card.Text style={{ textAlign: "justify" }}>
           {techD}
         </Card.Text>
-        <Button variant="primary" href={link} target="_blank">
+        {/* <Button variant="primary" href={link} target="_blank">
           <BiLinkExternal /> &nbsp;
-        </Button>
+        </Button> */}
         &nbsp;
         &nbsp;
-        <Button variant="primary" href={a} target="_blank">
+        {/* <Button variant="primary" href={a} target="_blank">
           <AiFillGithub /> &nbsp;
-        </Button>
+        </Button> */}
       </Card.Body>
     </Card>
   );
