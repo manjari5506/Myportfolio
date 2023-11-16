@@ -53,7 +53,7 @@ function Projects() {
             />
         </Col>
 
-        <Col md={6} className="project-card">
+        {/* <Col md={6} className="project-card">
             <ProjectCards
               imgPath="https://i.ibb.co/17R6GQ0/Rodan.png"
               title="Rodan+Fields Clone"
@@ -63,7 +63,7 @@ function Projects() {
               link="https://master.d23z4v79tx0nu6.amplifyapp.com/"
               a="https://github.com/manjari5506/wonderful-sound-2096"
             />
-        </Col>
+        </Col> */}
 
         <Col md={6} className="project-card">
             <ProjectCards
