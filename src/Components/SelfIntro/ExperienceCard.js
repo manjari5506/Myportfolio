@@ -2,7 +2,7 @@ import React from "react";
 import { ListGroup } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 // import Button from "react-bootstrap/Button";
-//import "./projectcards.css"
+import "./experiencecard.css"
 
 function ExperienceCard({ logo, title, company, companyD, tech, techD }) {
     return (
